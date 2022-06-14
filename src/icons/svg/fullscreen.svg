@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 3@2x</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-3" transform="translate(0.559688, 1.399444)">
+            <polyline id="路径-2" stroke="#666666" stroke-width="2" points="1 4 1 0 5 0"></polyline>
+            <polygon id="路径-2" fill="#666666" fill-rule="nonzero" transform="translate(14.500000, 1.500000) scale(-1, 1) translate(-14.500000, -1.500000) " points="17 -1 17 1 13.999 1 14 4 12 4 12 -1"></polygon>
+            <polygon id="路径-2" fill="#666666" fill-rule="nonzero" transform="translate(2.500000, 13.500000) scale(1, -1) translate(-2.500000, -13.500000) " points="5 11 5 13 2 13 2 16 0 16 0 11"></polygon>
+            <polygon id="路径-2" fill="#666666" fill-rule="nonzero" transform="translate(14.500000, 13.500000) scale(-1, -1) translate(-14.500000, -13.500000) " points="17 11 17 13 13.999 13 14 16 12 16 12 11"></polygon>
+        </g>
+    </g>
+</svg>

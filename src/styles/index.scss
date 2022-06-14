@@ -1,0 +1,43 @@
+@use "sass:map";
+@use "var/var" as *;
+@use "mixins/var" as *;
+
+:root {
+  --el-color-white: #{$color-white};
+  --el-color-black: #{$color-black};
+  --el-color-primary: #{$color-primary};
+
+  // --el-color-#{$type}-rgb
+  @each $type in (primary, success, warning, danger, error, info) {
+    @include set-css-color-rgb($type);
+  }
+
+  // --el-color-primary-light-#{$i}
+  @for $i from 1 through 9 {
+    @include set-css-color-type-light("primary", $i);
+  }
+
+  // --el-color-primary-dark-2
+  --el-color-primary-dark-2: #{map.get($colors, "primary", "dark-2")};
+
+  // --el-color-#{$type}
+  // --el-color-#{$type}-light-{$i}
+  @each $type in (success, warning, danger, error, info) {
+    @include set-css-color-type($type);
+  }
+
+  // Background
+  --el-bg-color: #{$bg-color};
+
+  // --el-text-color-#{$type}
+  @include set-component-css-var("text-color", $text-color);
+
+  @include set-component-css-var("border-color", $border-color);
+
+  // --font-family
+  --font-family: #{$font-family};
+}
+
+html {
+  font-family: var(--font-family);
+}
