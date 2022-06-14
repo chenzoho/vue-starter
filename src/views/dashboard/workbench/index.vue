@@ -1,1 +1,0 @@
-<template>dashboard.workbench</template>
