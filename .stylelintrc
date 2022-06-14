@@ -1,6 +1,16 @@
 {
-  "extends": ["stylelint-config-standard", "stylelint-config-prettier", "stylelint-config-recess-order", "stylelint-config-standard-scss", "stylelint-config-prettier-scss", "stylelint-config-html", "stylelint-config-recommended-vue"],
-  "plugins": ["stylelint-order"],
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-prettier",
+    "stylelint-config-recess-order",
+    "stylelint-config-standard-scss",
+    "stylelint-config-prettier-scss",
+    "stylelint-config-html",
+    "stylelint-config-recommended-vue"
+  ],
+  "plugins": [
+    "stylelint-order"
+  ],
   "rules": {
     "max-line-length": 240,
     "rule-empty-line-before": null,
@@ -13,7 +23,19 @@
     "at-rule-no-unknown": [
       true,
       {
-        "ignoreAtRules": ["use", "include", "mixin", "each", "at-root", "if", "else", "for", "return", "extend", "function"]
+        "ignoreAtRules": [
+          "use",
+          "include",
+          "mixin",
+          "each",
+          "at-root",
+          "if",
+          "else",
+          "for",
+          "return",
+          "extend",
+          "function"
+        ]
       }
     ],
     "function-no-unknown": null,
