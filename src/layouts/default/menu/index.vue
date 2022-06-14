@@ -2,7 +2,7 @@
   <el-aside class="el-layout-aside" :style="getWrapperStyle">
     <AppLogo></AppLogo>
     <el-scrollbar>
-      <el-menu class="el-menu-vertical-demo" :default-active="activeMenu" :style="getMenuStyle" :background-color="bgColor" text-color="#fff" :collapse="settingRef.collapse" :unique-opened="settingRef.accordion">
+      <el-menu class="menu" :default-active="activeMenu" :style="getMenuStyle" :background-color="bgColor" text-color="#fff" :collapse="settingRef.collapse" :unique-opened="settingRef.accordion">
         <template v-for="item in menus" :key="item.path">
           <SubMenu :item="item" />
         </template>
@@ -98,6 +98,7 @@ export default defineComponent({
 
   .el-scrollbar {
     height: calc(100vh - var(--el-aside-height)) !important;
+
     &__view {
       height: calc(100vh - var(--el-aside-height));
     }
@@ -120,10 +121,8 @@ export default defineComponent({
     border-bottom: none;
   }
 }
+
 .el-menu-vertical-demo:not(.el-menu--collapse) {
   width: 200px;
-}
-.el-aside {
-  width: auto !important;
 }
 </style>

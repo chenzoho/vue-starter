@@ -2,19 +2,25 @@
   <template v-if="!isLast">
     <template v-if="!isExist">
       <router-link :to="resolvePath(item.path)">
-        <el-icon><Menu /></el-icon>
+        <el-icon>
+          <Menu />
+        </el-icon>
         {{ item.name }}
       </router-link>
     </template>
     <template v-else>
       <a target="_blank" rel="noopener" :href="resolvePath(item.path)">
-        <el-icon><Menu /></el-icon>
+        <el-icon>
+          <Menu />
+        </el-icon>
         {{ item.name }}
       </a>
     </template>
   </template>
   <template v-else>
-    <el-icon><Menu /></el-icon>
+    <el-icon>
+      <Menu />
+    </el-icon>
     <template v-if="!showTitle">{{ item.name }}</template>
   </template>
 </template>
