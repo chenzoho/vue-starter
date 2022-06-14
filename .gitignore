@@ -23,7 +23,7 @@ pnpm-debug.log*
 *.sln
 *.sw?
 
-# lock
+# Lock
 yarn.lock
 npm.lock
 package.lock
