@@ -28,3 +28,4 @@ yarn.lock
 npm.lock
 package.lock
 pnpm-lock.yaml
+.pnpm-debug.log
