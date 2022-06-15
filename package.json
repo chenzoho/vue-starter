@@ -12,6 +12,8 @@
 	},
 	"license": "MIT",
 	"devDependencies": {
+		"@types/node": "^17.0.43",
+		"@types/qs": "^6.9.7",
 		"@typescript-eslint/eslint-plugin": "^5.28.0",
 		"@typescript-eslint/parser": "^5.28.0",
 		"@vitejs/plugin-vue": "^2.3.3",
@@ -36,6 +38,12 @@
 		"vite": "^2.9.12"
 	},
 	"dependencies": {
-		"vue": "^3.2.37"
+		"axios": "^0.27.2",
+		"element-plus": "^2.2.5",
+		"mitt": "^3.0.0",
+		"qs": "^6.10.5",
+		"vue": "^3.2.37",
+		"vxe-table": "^4.2.3",
+		"xe-utils": "^3.5.4"
 	}
 }
