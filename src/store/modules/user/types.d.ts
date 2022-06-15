@@ -8,6 +8,8 @@ export interface UserState {
 	refresh: number;
 	/** 编号 */
 	code: "";
+	/** 部门编号 */
+	deptCode: "";
 	/** 名称 */
 	name: string;
 	/** 性别 */

@@ -9,11 +9,25 @@ export const useUserStore = defineStore("user", {
 		expire: 0,
 		refresh: 0,
 		code: "",
+		deptCode: "",
 		name: "",
 		gender: 0,
 		avatar: ""
 	}),
-	getters: {},
+	getters: {
+		/** 获取用户昵称 */
+		getName(): string {
+			return this.name;
+		},
+		/** 获取用户编码 */
+		getCode(): string {
+			return this.code;
+		},
+		/** 获取用户编号 */
+		getDeptCode(): string {
+			return this.deptCode;
+		}
+	},
 	actions: {
 		/**
 		 * 更新用户信息
@@ -58,7 +72,7 @@ export const useUserStore = defineStore("user", {
 		 * @returns {booolean} 成功/失败
 		 */
 		valid(): boolean {
-			return this.code !== "" && this.expire > new Date().getTime();
+			return this.code != null && this.code != undefined && this.code != "" && this.expire > new Date().getTime();
 		}
 	}
 });
