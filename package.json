@@ -1,34 +1,41 @@
 {
-  "name": "vue-starter",
-  "version": "1.0.0",
-  "description": "vue3启动模板",
-  "author": {
-    "name": "chenzoho",
-    "email": "447188858@qq.com",
-    "url": "https://github.com/chenzoho"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "license": "MIT",
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.28.0",
-    "@typescript-eslint/parser": "^5.28.0",
-    "eslint": "^8.17.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-vue": "^9.1.1",
-    "postcss": "^8.4.14",
-    "postcss-html": "^1.4.1",
-    "prettier": "^2.7.0",
-    "stylelint": "^14.9.1",
-    "stylelint-config-html": "^1.0.0",
-    "stylelint-config-prettier": "^9.0.3",
-    "stylelint-config-recommended-scss": "^6.0.0",
-    "stylelint-config-recommended-vue": "^1.4.0",
-    "stylelint-config-standard": "^26.0.0",
-    "stylelint-config-standard-scss": "^4.0.0",
-    "stylelint-order": "^5.0.0",
-    "typescript": "^4.7.3"
-  }
+	"name": "vue-starter",
+	"version": "1.0.0",
+	"description": "vue3启动模板",
+	"author": {
+		"name": "chenzoho",
+		"email": "447188858@qq.com",
+		"url": "https://github.com/chenzoho"
+	},
+	"scripts": {
+		"dev": "vite"
+	},
+	"license": "MIT",
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^5.28.0",
+		"@typescript-eslint/parser": "^5.28.0",
+		"@vitejs/plugin-vue": "^2.3.3",
+		"@vitejs/plugin-vue-jsx": "^1.3.10",
+		"autoprefixer": "^10.4.7",
+		"eslint": "^8.17.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-prettier": "^4.0.0",
+		"eslint-plugin-vue": "^9.1.1",
+		"postcss": "^8.4.14",
+		"postcss-html": "^1.4.1",
+		"prettier": "^2.7.0",
+		"stylelint": "^14.9.1",
+		"stylelint-config-html": "^1.0.0",
+		"stylelint-config-prettier": "^9.0.3",
+		"stylelint-config-recommended-scss": "^6.0.0",
+		"stylelint-config-recommended-vue": "^1.4.0",
+		"stylelint-config-standard": "^26.0.0",
+		"stylelint-config-standard-scss": "^4.0.0",
+		"stylelint-order": "^5.0.0",
+		"typescript": "^4.7.3",
+		"vite": "^2.9.12"
+	},
+	"dependencies": {
+		"vue": "^3.2.37"
+	}
 }
