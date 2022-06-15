@@ -38,6 +38,7 @@
 		"vite": "^2.9.12"
 	},
 	"dependencies": {
+		"@vueuse/core": "^8.6.0",
 		"axios": "^0.27.2",
 		"element-plus": "^2.2.5",
 		"js-base64": "^3.7.2",
