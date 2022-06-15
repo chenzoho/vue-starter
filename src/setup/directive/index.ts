@@ -11,6 +11,7 @@ export function setupDirective(app: App<Element>): void {
 	const modules = import.meta.globEager("../../directives/**/*.ts");
 
 	for (const path in modules) {
+		console.log(modules[path]);
 		app.directive(modules[path].name, modules[path]);
 	}
 }

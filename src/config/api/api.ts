@@ -1,7 +1,7 @@
 // api方法
 import axios from "axios";
 import qs from "qs";
-import { emitter } from "@/config/bus";
+import { emitter } from "@/setup/bus";
 
 class Api {
 	constructor() {
