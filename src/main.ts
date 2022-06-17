@@ -5,6 +5,7 @@ import { setupEventBus } from "@/setup/bus";
 import { setupDirective } from "@/setup/directive";
 import { setupElement } from "@/setup/ele";
 import { setupTable } from "@/setup/table";
+import { setupGlobal } from "@/components";
 
 /**
  * bootstrap/启动
@@ -20,6 +21,8 @@ async function bootstrap(): Promise<void> {
 	setupElement(app);
 	//	table
 	setupTable(app);
+	// global
+	setupGlobal(app);
 
 	//	mount
 	app.mount("#app");

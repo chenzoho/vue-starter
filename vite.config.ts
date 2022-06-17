@@ -4,7 +4,7 @@ import { resolve } from "path";
 
 import vueJsx from "@vitejs/plugin-vue-jsx";
 
-// https://vitejs.dev/config/
+//	see https://vitejs.dev/config/
 export default defineConfig({
 	plugins: [vue(), vueJsx()],
 	resolve: {
@@ -17,7 +17,7 @@ export default defineConfig({
 		cors: true
 	},
 	css: {
-		//css预处理
+		//	css预处理
 		preprocessorOptions: {
 			scss: {
 				additionalData: '@use "@/styles/config.scss" as *;'

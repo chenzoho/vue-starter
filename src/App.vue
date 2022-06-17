@@ -7,6 +7,7 @@ import TsxDemo from "./components/TsxTest";
 	<img alt="Vue logo" src="./assets/logo.png" />
 	<TsxDemo />
 	<CountComp msg="Vue 3 + TypeScript + Vite + Tsx" />
+	<VTTest></VTTest>
 </template>
 
 <style lang="scss">

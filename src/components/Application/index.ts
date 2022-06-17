@@ -1,4 +1,4 @@
-import { withInstall } from "@/utils";
+import { withInstall } from "@/utils/install";
 
 import appLogo from "./src/AppLogo.vue";
 
