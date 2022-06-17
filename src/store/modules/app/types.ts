@@ -13,8 +13,14 @@ export interface IApiConfig {
 	prefix: string;
 }
 
-/** 验证码配置 */
+/** 腾讯验证码配置 */
 export interface ICaptchaConfig {
+	/** 秘钥 */
+	AppId: string;
+}
+
+/** 高德地图配置 */
+export interface IMapConfig {
 	/** 秘钥 */
 	AppId: string;
 }
