@@ -1,7 +1,6 @@
 import { defineStore, Store } from "pinia";
 import { store } from "@/store";
 import { IMetaSetting } from "./types";
-import { useTitle } from "@vueuse/core";
 
 export const useMetaStore = defineStore({
 	id: "meta",
@@ -19,9 +18,6 @@ export const useMetaStore = defineStore({
 		 * @param {Partial<IMetaSetting>} partial
 		 */
 		update(partial: Partial<IMetaSetting>): void {
-			if (partial.title != this.title) {
-				useTitle(partial.title);
-			}
 			this.$patch(partial);
 		}
 	}

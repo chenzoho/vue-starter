@@ -1,26 +1,20 @@
-import { FullConfig } from "./setting";
-
 export interface AppState {
 	/** 全局加载器 */
 	loading: boolean;
-	/** 布局配置 */
-	setting: FullConfig;
+	/** API配置 */
+	apiConfig: IApiConfig;
+}
+
+/** API配置 */
+export interface IApiConfig {
+	/** 接口地址 */
 	baseUrl: string;
-	urlConfig: UrlConfig;
+	/** 图片地址 */
 	prefix: string;
 }
 
-export interface UrlConfig {
-	mode: string;
-	baseUrl: string;
-	system: string;
-	commodity: string;
-	customer: string;
-	order: string;
-	file: string;
-	lucene: string;
-	supply: string;
-	upload: string;
-	uploadPart: string;
-	mergeChunks: string;
+/** 验证码配置 */
+export interface ICaptchaConfig {
+	/** 秘钥 */
+	AppId: string;
 }
