@@ -15,5 +15,13 @@ export default defineConfig({
 	server: {
 		open: true,
 		cors: true
+	},
+	css: {
+		//css预处理
+		preprocessorOptions: {
+			scss: {
+				additionalData: '@use "@/styles/config.scss" as *;'
+			}
+		}
 	}
 });
