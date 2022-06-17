@@ -3,6 +3,8 @@ export interface AppState {
 	loading: boolean;
 	/** API配置 */
 	apiConfig: IApiConfig;
+	/** 菜单配置 */
+	meunConfig: IMenuConfig;
 }
 
 /** API配置 */
@@ -11,6 +13,12 @@ export interface IApiConfig {
 	baseUrl: string;
 	/** 图片地址 */
 	prefix: string;
+}
+
+/** 菜单配置 */
+export interface IMenuConfig {
+	/** 折叠  */
+	collapse: boolean;
 }
 
 /** 腾讯验证码配置 */

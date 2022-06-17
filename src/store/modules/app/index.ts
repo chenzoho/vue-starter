@@ -9,6 +9,9 @@ export const useAppStore = defineStore({
 		apiConfig: {
 			baseUrl: import.meta.env.VITE_APP_Prefix,
 			prefix: import.meta.env.VITE_APP_Prefix
+		},
+		meunConfig: {
+			collapse: false
 		}
 	}),
 	getters: {},
