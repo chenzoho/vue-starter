@@ -8,8 +8,8 @@
 <script setup lang="ts">
 import CountComp from "./components/Count.vue";
 import TsxDemo from "./components/TsxTest";
-import { useTitle } from "@/hooks/web/useMeta";
-useTitle();
+import { useMeta } from "@/hooks/web/useMeta";
+useMeta();
 </script>
 <style lang="scss">
 #app {
