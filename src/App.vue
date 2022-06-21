@@ -1,8 +1,3 @@
-<script setup lang="ts">
-import CountComp from "./components/Count.vue";
-import TsxDemo from "./components/TsxTest";
-</script>
-
 <template>
 	<img alt="Vue logo" src="./assets/logo.png" />
 	<TsxDemo />
@@ -10,6 +5,12 @@ import TsxDemo from "./components/TsxTest";
 	<VTTest></VTTest>
 </template>
 
+<script setup lang="ts">
+import CountComp from "./components/Count.vue";
+import TsxDemo from "./components/TsxTest";
+import { useTitle } from "@/hooks/web/useMeta";
+useTitle();
+</script>
 <style lang="scss">
 #app {
 	margin-top: 60px;
